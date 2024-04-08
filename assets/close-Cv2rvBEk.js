@@ -1,0 +1,1 @@
+import{o as e,c as o,a as t}from"./index-DLhxWSXK.js";const s={xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 22 22"},n=t("path",{stroke:"#000","stroke-linecap":"round","stroke-width":"2",d:"M1.91 1.91 20.09 20.09M1.91 20.09 20.09 1.91"},null,-1),r=[n];function c(a,l){return e(),o("svg",s,[...r])}const i={render:c};export{i as default,c as render};
