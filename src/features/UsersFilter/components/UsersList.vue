@@ -25,7 +25,8 @@ const $props = defineProps({
 const $emit = defineEmits(['scrolled']);
 
 const scrollHandler = () => {
-  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+  const margin = 100;
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - margin) {
     $emit('scrolled');
   }
 };
