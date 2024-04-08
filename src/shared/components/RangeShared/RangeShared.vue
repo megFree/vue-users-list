@@ -25,13 +25,17 @@ const $props = defineProps({
 
 const minInputError = computed(() => {
   return (
-    min.value < $props.boundaries.min || min.value > $props.boundaries.max || min.value > max.value
+    +min.value < $props.boundaries.min ||
+    +min.value > $props.boundaries.max ||
+    +min.value > +max.value
   );
 });
 
 const maxInputError = computed(() => {
   return (
-    max.value > $props.boundaries.max || max.value < $props.boundaries.min || max.value < min.value
+    +max.value > $props.boundaries.max ||
+    +max.value < $props.boundaries.min ||
+    +max.value < +min.value
   );
 });
 </script>
